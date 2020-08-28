@@ -1,0 +1,223 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Apr 11 13:58:46 2020
+# Process ID: 14036
+# Current directory: C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7752 C:\Users\lamje\Dropbox\Y1S2\EE2026\Lab Materials\Project Final\SoundDisplay\SoundDisplay.xpr
+# Log file: C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/vivado.log
+# Journal file: C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/orang/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10156-MSI/PrjAr/_X_' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 752.086 ; gain = 94.637
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Top_Student
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 845.148 ; gain = 91.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:20]
+INFO: [Synth 8-6157] synthesizing module 'clk20k' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk20k.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk20k' (1#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk20k.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (2#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'P_Int' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLK_INT' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/CLK_INT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CLK_INT' (3#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/CLK_INT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer_s' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer_s.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (4#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer_s' (5#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer_s.v:23]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:59]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:60]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:61]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:62]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:63]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:64]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:65]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:66]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:67]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:68]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:69]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:70]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:71]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:72]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:73]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:74]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:86]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:100]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:101]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:102]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:103]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:104]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:105]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:106]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:107]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:108]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:109]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:110]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:111]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:112]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:113]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:114]
+WARNING: [Synth 8-6090] variable 'max' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'P_Int' (6#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/P_Int.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PINT_DISPLAY' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:38]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:109]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:110]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:111]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:112]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:113]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:114]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:115]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:116]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:117]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:118]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:120]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:124]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:128]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:132]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:136]
+WARNING: [Synth 8-6090] variable 'an' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:140]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:108]
+INFO: [Synth 8-6155] done synthesizing module 'PINT_DISPLAY' (7#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/PINT_DISPLAY.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DisplayModule' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/DisplayModule.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk6p25m' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk6p25m.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk6p25m' (8#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk6p25m.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk1p5' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk1p5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk1p5' (9#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/clk1p5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'zap_clock' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/zap_clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'zap_clock' (10#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/zap_clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce_clock' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'debounce_clock' (11#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (12#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/debouncer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (13#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/DisplayModule.v:123]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/DisplayModule.v:438]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/DisplayModule.v:1541]
+WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/DisplayModule.v:201]
+WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/DisplayModule.v:202]
+INFO: [Synth 8-6155] done synthesizing module 'DisplayModule' (14#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/DisplayModule.v:23]
+WARNING: [Synth 8-689] width (16) of port connection 'peak_in' does not match port width (26) of module 'DisplayModule' [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (15#1) [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:20]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port peak_in[25]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port peak_in[24]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port peak_in[23]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port peak_in[22]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port peak_in[21]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port peak_in[20]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port peak_in[19]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port peak_in[18]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port peak_in[17]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port peak_in[16]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port Mic_in[5]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port Mic_in[4]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port Mic_in[3]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port Mic_in[2]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port Mic_in[1]
+WARNING: [Synth 8-3331] design DisplayModule has unconnected port Mic_in[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 922.742 ; gain = 169.453
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 922.742 ; gain = 169.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 922.742 ; gain = 169.453
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/lamje/Dropbox/Y1S2/EE2026/Lab Materials/Project Final/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1278.918 ; gain = 525.629
+42 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1278.918 ; gain = 525.629
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 11 14:05:44 2020...

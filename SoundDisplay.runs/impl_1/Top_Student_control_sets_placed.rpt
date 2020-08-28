@@ -1,0 +1,107 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  4 14:48:59 2020
+| Host         : MSI running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    36 |
+| Unused register locations in slices containing registers |    92 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            3 |
+|      4 |            3 |
+|      6 |            1 |
+|      8 |            6 |
+|     10 |            3 |
+|     12 |            3 |
+|     14 |            1 |
+|    16+ |           16 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             246 |           48 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             206 |           36 |
+| Yes          | No                    | No                     |             250 |           63 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             246 |           45 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+|             Clock Signal             |           Enable Signal           |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++--------------------------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+|  CLK100MHZ_IBUF_BUFG                 | DM0/bar_bias[3]_i_1_n_0           |                                       |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG               | Int1/an_reg[3][0]                 | Int1/an_reg[2]                        |                1 |              2 |
+| ~clk6p25m                            |                                   |                                       |                1 |              2 |
+|  DM0/debouncerC/debounce_clock/Q_reg |                                   |                                       |                1 |              4 |
+|  DM0/debouncerU/debounce_clock/Q_reg |                                   |                                       |                1 |              4 |
+|  clk6p25m                            |                                   |                                       |                1 |              4 |
+|  J_MIC3_Pin1_OBUF_BUFG               | Int1/an_reg[3][0]                 |                                       |                2 |              6 |
+|  clk6p25m                            | DM0/bg_colour[13]_i_1_n_0         | DM0/clk1p50/high_colour4_reg[7]       |                1 |              8 |
+|  clk6p25m                            | DM0/bg_colour[13]_i_1_n_0         | DM0/clk1p50/high_colour4_reg[11]      |                1 |              8 |
+|  CLKINT                              | Int1/scale[3]_i_1_n_0             |                                       |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG                 | DM0/Oled_Display/E[1]             |                                       |                2 |              8 |
+|  clk6p25m                            | DM0/bg_colour[13]_i_1_n_0         | DM0/clk1p50/high_colour4_reg[10]      |                1 |              8 |
+|  CLK100MHZ_IBUF_BUFG                 | DM0/value[4]_i_1_n_0              |                                       |                2 |              8 |
+|  CLKINT                              | Int1/pulse0/dff0/E[0]             | Int1/max[11]_i_1_n_0                  |                2 |             10 |
+|  clk6p25m                            | DM0/bg_colour[13]_i_1_n_0         | DM0/clk1p50/low_colour1_reg[7]        |                2 |             10 |
+|  clk6p25m                            | DM0/bg_colour[13]_i_1_n_0         | DM0/clk1p50/low_colour1_reg[10]       |                2 |             10 |
+|  CLKINT                              | Int1/pika_count[5]_i_1_n_0        |                                       |                2 |             12 |
+|  clk6p25m                            | DM0/bg_colour[13]_i_1_n_0         | DM0/medium_colour5[10]_i_1_n_0        |                2 |             12 |
+|  clk6p25m                            | DM0/bg_colour[13]_i_1_n_0         | DM0/high_colour5[11]_i_1_n_0          |                3 |             12 |
+|  J_MIC3_Pin1_OBUF_BUFG               | Int1/E[0]                         |                                       |                4 |             14 |
+|  CLKINT                              |                                   |                                       |                5 |             22 |
+| ~AC1/J_MIC3_Pin4_OBUF                |                                   |                                       |                7 |             24 |
+|  CLK100MHZ_IBUF_BUFG                 |                                   | J_MIC3_Pin1_OBUF_BUFG                 |                3 |             24 |
+|  CLK100MHZ_IBUF_BUFG                 | DM0/Oled_Display/E[0]             |                                       |                6 |             24 |
+|  CLK100MHZ_IBUF_BUFG                 |                                   | slow20k/clk20k0                       |                4 |             26 |
+|  J_MIC3_Pin1_OBUF_BUFG               |                                   |                                       |                9 |             30 |
+|  clk6p25m                            | DM0/bg_colour[13]_i_1_n_0         | DM0/clk1p50/bg_colour_reg[15]         |                8 |             30 |
+|  CLK100MHZ_IBUF_BUFG                 | DM0/p_in                          |                                       |                7 |             32 |
+|  CLKINT                              | Int1/P_in[15]_i_2_n_0             | Int1/P_in[15]_i_1_n_0                 |                8 |             32 |
+|  CLKINT                              |                                   | Int1/max[11]_i_1_n_0                  |                6 |             32 |
+| ~clk6p25m                            |                                   | DM0/debouncerC/dff0/reset             |                5 |             34 |
+| ~clk6p25m                            | DM0/Oled_Display/delay[0]_i_1_n_0 | DM0/debouncerC/dff0/reset             |                5 |             40 |
+| ~clk6p25m                            | DM0/Oled_Display/state            | DM0/debouncerC/dff0/reset             |                9 |             64 |
+| ~clk6p25m                            |                                   | DM0/Oled_Display/spi_word[39]_i_1_n_0 |               18 |             90 |
+|  clk6p25m                            | DM0/bg_colour[13]_i_1_n_0         |                                       |               36 |            136 |
+|  CLK100MHZ_IBUF_BUFG                 |                                   |                                       |               23 |            156 |
++--------------------------------------+-----------------------------------+---------------------------------------+------------------+----------------+
+
+
